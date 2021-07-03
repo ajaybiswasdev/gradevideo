@@ -1,0 +1,11 @@
+@import '../../theme.scss';
+
+.video-detail-component {
+    display: flex;
+    flex-direction: column;
+    font-family: Maax;
+    width: 100%;
+    margin: 0;
+    height: 100%;
+    max-width: 100%;
+}

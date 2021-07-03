@@ -1,0 +1,26 @@
+@import '../../../theme.scss';
+
+.location-list-component {
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    .info-area {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 220px;
+            height: 50px;
+            border: solid 2px #E7EBEE;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            cursor: pointer;
+        }
+    }
+}

@@ -1,0 +1,80 @@
+@import '../../../theme.scss';
+
+.card-inputbox-component {
+    width: 100%;
+    position: relative;
+
+    .card-inputbox-container {
+        position: relative;
+        font-family: Maax;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        border: 2px solid #E7EBEE;
+        background: white;
+        z-index: 2;
+        overflow: hidden;
+    
+        ::placeholder {
+            color: #C5CBD7;
+        }
+    
+        .card-input-container {
+            flex: 1;
+            height: 100%;
+            border: none;
+            outline: none;
+            background: none;
+
+            &.no-icon {
+                padding-left: 0;
+            }
+        }
+        
+    }
+    .card-inputbox-container-error {
+        border: 2px solid red;
+    }
+
+    .card-inputbox-bg {
+        bottom: initial;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .card-inputbox-container {
+        height: 65px;
+        padding-left: 22px;
+
+        .card-input-container {
+            font-size: 20px;
+            padding-left: 16px;
+        }
+    }
+
+    .card-inputbox-bg {
+        height: 65px;
+        left: 12px;
+        top: 14px;
+        right: -12px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .card-inputbox-container {
+        height: 50px;
+        padding-left: 17px;
+
+        .card-input-container {
+            font-size: 16px;
+            padding-left: 14px;
+        }
+    }
+    
+    .card-inputbox-bg {
+        height: 50px;
+        left: 8px;
+        top: 8px;
+        right: -8px;
+    }
+}

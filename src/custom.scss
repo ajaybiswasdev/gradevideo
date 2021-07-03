@@ -1,0 +1,60 @@
+.v-r {
+    display: flex;
+    flex-direction: column;
+}
+
+.v-c {
+    display: flex;
+    align-items: center;
+}
+
+.h-c {
+    display: flex;
+    justify-content: center;
+}
+
+.svg-icon {
+    display: flex;
+    align-items: center;
+    div {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.btn-2 {
+    font-weight: 900;
+    font-size: 15px;
+    border-radius: 4px;
+    color: white;
+    min-height: 40px;
+    border: none;
+    outline: none;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-family: inherit;
+
+    &:focus {
+        outline: none;
+        border: none;
+    }
+    &:hover {
+        color: white;
+    }
+}
+
+.btn-2-outline {
+    background: none;
+    border: 1px solid $primary-color;
+    color: $primary-color;
+    &:focus {
+        border: 1px solid $primary-color;
+    }
+    &:hover {
+        color: $primary-color;
+    }
+}
+
+.primary-btn {
+    background: $primary-color;
+}

@@ -1,0 +1,22 @@
+@import '../../../theme.scss';
+
+.radiobutton-component {
+    cursor: pointer;
+    width: fit-content;
+    .radio-circle {
+        width: 17px;
+        height: 17px;
+        border: 1px solid #E3E8EC;
+        border-radius: 50%;
+        margin-right: 11px;
+        .inner-circle {
+            width: 9px;
+            height: 9px;
+            background: $primary-color;
+            border-radius: 50%;
+        }
+    }
+    .radio-value {
+        font-size: 15px;
+    }
+}

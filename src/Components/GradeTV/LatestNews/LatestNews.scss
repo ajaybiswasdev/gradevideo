@@ -1,0 +1,121 @@
+@import '../../../theme.scss';
+
+.news-component {
+    font-family: Maax;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    color: #000;
+   
+
+    p {
+        font-size: 12px;
+    }
+
+    .new-item {
+        border-bottom: 1px solid rgba(112,135,142,0.20);
+        .time-txt {
+            font-size: 13px;
+        }
+    }
+
+    .stay-description {
+        margin-top: 25px;
+    }
+
+    .subscribe-btn {
+        cursor: pointer;
+        width: 150px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $secondary-bg;
+        font-size: 14px;
+        margin-top: 30px;
+        border-radius: 5px;
+        color: #FFF
+    }
+    .teacher-summary {
+        margin-top: 50px;
+        display: flex !important;
+        flex-direction: column;
+        align-items: center ;
+        .summary {
+            font-size: 20px;
+            text-align: center;
+        }
+
+        .profile-info {
+            display: flex;
+            align-items: center;
+            margin-top: 30px;
+
+            .avatar {
+                width: 50px;
+                border-radius: 50%;
+            }
+
+            .name {
+                font-weight: 500;
+                font-size: 15px;
+                margin-left: 20px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .news-component {
+        padding: 130px 0;
+
+        h2 {
+            font-size: 30px;
+        }
+    
+        h4 {
+            margin-top: 20px;
+        }
+
+        .new-item {
+            padding: 25px 0px;
+            
+        }
+
+        .stay-description {
+            font-size: 20px;
+        }
+
+        .teacher-summary {
+            font-size: 20px;
+        }
+    }
+        
+}
+
+@media screen and (max-width: 991px) {
+    .news-component {
+        padding: 50px 0;
+
+        h2 {
+            margin-top: 30px;
+            font-size: 24px;
+        }
+    
+        h4 {
+            margin-top: 16px;
+        }
+
+        .new-item {
+            padding: 15px 0px;
+        }
+
+        .stay-description {
+            font-size: 16px;
+        }
+
+        .teacher-summary {
+            font-size: 18px;
+        }
+    }
+}

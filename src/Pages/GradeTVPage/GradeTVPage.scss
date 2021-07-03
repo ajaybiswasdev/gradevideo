@@ -1,0 +1,8 @@
+@import '../../theme.scss';
+
+.tv-page {
+    display: flex;
+    flex-direction: column;
+    font-family: Maax;
+    color: $secondary-text;
+}

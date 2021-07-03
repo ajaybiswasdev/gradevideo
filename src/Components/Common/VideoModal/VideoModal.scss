@@ -1,0 +1,101 @@
+.video-modal-component {
+    .modal-dialog {
+        width: 100%;
+        margin: 0;
+        height: 100%;
+        max-width: 100%;
+
+        .modal-content {
+            border: none;
+            outline: none;
+            background: none;
+            position: relative;
+            height: 100%;
+
+            .video-content {
+                display: flex;
+                margin: auto;
+                background: none;
+                position: relative;
+                width: 100%;
+                .close-btn {
+                    cursor: pointer;
+                    position: absolute;
+                    right: 0;
+                    top: -30px;
+                    fill: white;
+                    .icon-close {
+                        transform: rotate(45deg);
+                    }
+                }
+                .main-area {
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    top: 0;
+                    bottom: 0;
+                    background-color: none;
+                    .play-btn-bg {
+                        position: absolute;
+                        z-index: 10;
+                        left: 50%;
+                        top: 50%;
+                        transform: translate(-50%, -50%);
+                        cursor: pointer;
+                        width: 120px;
+                        height: 70px;
+                        background-color: #23A4EF;
+                        opacity: 0.8;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        .play-icon {
+                            font-size: 50px;
+                            color: #FFF;
+                        }
+                    }
+                    .play-btn {
+                        position: absolute;
+                        z-index: 10;
+                        left: 50%;
+                        top: 50%;
+                        transform: translate(-50%, -50%);
+                        cursor: pointer;
+                    }
+                    video {
+                        object-fit: fill;
+                        position: relative;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .modal-content {
+        padding: 0 30px;
+    }
+    .video-content {
+        max-width: 1200px;
+        padding-top: 700px;
+        .play-btn {
+            width: 79px;
+            height: 79px;
+        }
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .modal-content {
+        padding: 0 15px;
+    }
+    .video-content {
+        max-width: 100%;
+        padding-top: 55%;
+        .play-btn {
+            width: 27px;
+            height: 27px;
+        }
+    }
+}

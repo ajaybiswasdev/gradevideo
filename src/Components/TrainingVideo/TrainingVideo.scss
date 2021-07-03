@@ -1,0 +1,153 @@
+@import '../../theme.scss';
+
+.training-page {
+    height: 100%;
+    overflow-y: auto;
+    .sub-section {
+        max-width: 900px;
+        width: 100%;
+        h3 {
+            text-align: center;
+            font-size: 23px;
+        }
+        p {
+            line-height: 23px;
+        }
+        .section-index-row {
+            max-width: 100%;
+            overflow: hidden;
+            margin-top: 23px;
+            min-height: fit-content;
+            position: relative;
+            align-self: center;
+            .arrow-btn {
+                position: absolute;
+                right: 0;
+                height: 100%;
+                width: 20px;
+                background: white;
+                img {
+                    width: 6px;
+                }
+                &:first-child {
+                    left: 0;
+                }
+            }
+            .section-index-container {
+                max-width: 100%;
+                width: 100%;
+                overflow-x: auto;
+                &::-webkit-scrollbar {
+                    display: none;
+                }
+                -ms-overflow-style: none;
+                .section-index {
+                    min-width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    border: 1px solid #E3E8EC;
+                    font-size: 15px;
+                    cursor: pointer;
+                    margin-right: 15px;
+                    &.activated {
+                        background: $primary-color;
+                        color: white;
+                    }
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+        .section-content {
+            margin-top: 30px;
+            border-top: 1px solid #E3E8EC;
+            padding-top: 26px;
+            .video-area {
+                position: relative;
+                margin: 25px 0 11px 0;
+                padding-top: 50%;
+                .player-area {
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    top: 0;
+                    bottom: 0;
+                    background-color: none;
+                    .play-btn {
+                        position: absolute;
+                        z-index: 10;
+                        left: 50%;
+                        top: 50%;
+                        transform: translate(-50%, -50%);
+                        cursor: pointer;
+                        width: 50px;
+                        height: 50px;
+                        border-radius: 50%;
+                        background-color: $primary-color;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        .play-icon {
+                            font-size: 30px;
+                            color: #FFF;
+                        }
+                    }
+                    video {
+                        object-fit: fill;
+                        position: relative;
+                        border-radius: 10px;
+                    }
+                }
+            }
+            .question-area {
+                margin: 20px 0 30px;
+                min-height: fit-content;
+                .question-section {
+                    margin-bottom: 25px;
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                    h4 {
+                        font-size: 15px;
+                        margin-bottom: 11px;
+                    }
+                    .sub-question {
+                        margin-bottom: 11px;
+                        p {
+                            font-size: 15px;
+                        }
+                        .question-radio {
+                            margin-right: 11px;
+                        }
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .training-page {
+        padding: 27px 30px 10px 30px;
+        .sub-section {
+            h3 {
+                margin-bottom: 27px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .training-page {
+        padding: 27px 15px 10px 15px;
+        .sub-section {
+            h3 {
+                margin-bottom: 17px;
+            }
+        }
+    }
+}

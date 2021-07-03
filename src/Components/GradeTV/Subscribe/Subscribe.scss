@@ -1,0 +1,119 @@
+@import '../../../theme.scss';
+
+.subscribe-component {
+    font-family: Maax;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    color: #FFF;
+
+
+    .left-subscribe {
+        height: 300px;
+        background-color:  #00b9a1;
+        padding: 50px 30px;
+        .description {
+            font-size: 17px;
+            margin-top: 20px;
+        }
+        .send-box {
+            position: relative;
+            z-index: 1;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 50px;
+
+            .email-input {
+                height: 40px;
+                width: 65%;
+                border: none;
+                padding: 0px 15px;
+            }
+
+            .error-mail-input {
+                border: solid 2px red;
+            }
+
+            .subscribe-btn {
+                width: 30%;
+                height: 40px;
+                border-radius: 5px;
+                font-size: 13px;
+                background-color: #21323b;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+            }
+        }
+    }
+    .right-subscribe {
+        height: 300px;
+        background-color: #21323b;
+        padding: 50px 30px;
+        .description {
+            font-size: 17px;
+            margin-top: 20px;
+        }
+        .send-box {
+            position: relative;
+            z-index: 1;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 50px;
+            .email-input {
+                height: 40px;
+                width: 65%;
+                border: none;
+                padding: 0px 15px;
+            }
+
+            .error-mail-input {
+                border: solid 2px red;
+            }
+            
+            .subscribe-btn {
+                width: 30%;
+                height: 40px;
+                border-radius: 5px;
+                font-size: 13px;
+                background-color: #00b9a1;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .subscribe-component {
+        padding: 130px 0;
+
+        h2 {
+            font-size: 34px;
+        }
+
+        p {
+            font-size: 18px;
+        }
+    }
+
+}
+
+@media screen and (max-width: 991px) {
+    .subscribe-component {
+        padding: 50px 0;
+
+        h2 {
+            font-size: 24px;
+        }
+
+        p {
+            font-size: 16px;
+        }
+    }
+}

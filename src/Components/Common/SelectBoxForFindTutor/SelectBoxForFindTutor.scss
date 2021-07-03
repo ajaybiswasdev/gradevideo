@@ -1,0 +1,137 @@
+@import '../../../theme.scss';
+
+.selectbox-find-tutor-component {
+    width: 100%;
+    position: relative;
+
+    .selectbox-find-tutor-container {
+        position: relative;
+        font-family: Maax;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        background: white;
+        border-radius: 5px;
+        z-index: 2;
+        .MuiInputLabel-outlined {
+            font-size: 15px;
+            color: #ccc;
+        }
+        .MuiInputLabel-outlined.MuiInputLabel-shrink {
+            display: none;
+        }
+        .MuiAutocomplete-inputRoot {            
+            font-size: 15px;
+        }
+        .MuiOutlinedInput-notchedOutline {
+            border: none;
+        }
+        
+        ::placeholder {
+            color: #C5CBD7;
+        }
+    
+        .search-text {
+            flex: 1;
+            height: 100%;
+            border: none;
+            outline: none;
+        }
+
+        img {
+            transform: rotate(90deg);
+            margin-right: 3px;
+        }
+    }
+    .selectbox-find-tutor-container-error {
+        border: 2px solid red;
+    }
+
+    .options-area {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        border-left: 2px solid #E7EBEE;
+        border-right: 2px solid #E7EBEE;
+        border-bottom: 2px solid #E7EBEE;
+        position: absolute;
+        z-index: 15;
+        max-height: 280px;
+        overflow-y: scroll;
+
+        .option {
+            display: flex;
+            align-items: center;
+            color: $secondary-text;
+            background: white;
+
+            &:hover {
+                color: white;
+                background: $secondary-text !important;
+            }
+        }
+    }
+
+    .selectbox-find-tutor-bg {
+        bottom: initial;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .selectbox-find-tutor-container {
+        height: 40px;
+        // padding-left: 21px;
+
+        svg {
+            margin-right: 3px;
+        }
+
+        .search-text {
+            font-size: 13px;
+        }
+    }
+
+    .options-area {
+        .option {
+            height: 40px;
+            // padding-left: 21px;
+        }
+    }
+
+
+    .selectbox-find-tutor-bg {
+        height: 40px;
+        left: 12px;
+        top: 14px;
+        right: -12px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .selectbox-find-tutor-container {
+        height: 40px;
+        padding-left: 3px;
+
+        svg {
+            margin-right: 5px;
+        }
+
+        .search-text {
+            font-size: 13px;
+        }
+    }
+
+    .options-area {
+        .option {
+            height: 40px;
+            padding-left: 17px;
+        }
+    }
+    
+    .selectbox-find-tutor-bg {
+        height: 40px;
+        left: 8px;
+        top: 8px;
+        right: -8px;
+    }
+}

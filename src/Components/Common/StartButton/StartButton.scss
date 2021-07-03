@@ -1,0 +1,43 @@
+@import '../../../theme.scss';
+
+.startbutton-component {
+    position: relative;
+    font-size: 20px;
+    .btn-area {
+        cursor: pointer;
+        background-color: $secondary-bg;
+        width: 100%;
+        position: relative;
+        z-index: 1;
+        display: flex;
+        .btn-text {
+            flex: 1;
+            border-right: 2px solid white;
+            color: white;
+            font-weight: bold;
+        }
+        .btn-element {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+
+            .number-color {
+                color: $secondary-bg;
+                font-size: 5px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .startbutton-component {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .startbutton-component {
+        width: 285px;
+    }
+}

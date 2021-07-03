@@ -1,0 +1,132 @@
+@import '../../../theme.scss';
+
+.works-component {
+    font-family: Maax;
+    display: flex;
+    flex-direction: column;
+    color: $secondary-text;
+    background: #F9FAFB;
+
+    .center-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .works-container {
+        .title {
+            text-align: center;
+            font-weight: bold;
+        }
+         p {
+             font-size: 15px;
+             line-height: 25px;
+
+         }
+
+        .main-row {
+            .item-area {            
+                padding: 10px 60px 30px 60px;  
+                z-index: 1;
+                h1 {
+                    font-size: 20px;
+                    font-weight: bold;
+                    margin: 40px 0 15px;
+
+                }    
+                .number-in {
+                    font-size: 0px;
+                }
+                .first-image {
+                    margin-top: 14px;
+                }  
+                .third-image {
+                    margin-top: -14px;
+                }
+                &:hover {
+                    height: 400px;                        
+                    box-shadow: 0px 9px 45px rgba(0, 0, 0, 0.08);
+                    background: white;
+                    z-index: 2;
+                    
+                    .image-item  {                    
+                        height: 150px;
+                        padding-top: 70px;
+                    }
+                    .number-out {
+                        width: 62px;
+                        height: 62px;
+                        border-radius: 31px;
+                        box-shadow: rgba(42, 26, 127, 0.2) 0px 0px 20px;
+                        border: #42AADF solid 1px;
+                        margin-top: -42px;
+                    }
+                    .number-in {
+                        width: 48px;
+                        height: 48px;
+                        border-radius: 24px;
+                        font-size: 20px;
+                        font-weight: bold;
+                        color: rgb(255, 255, 255);
+                        line-height: 24px;
+                        background: #42AADF;
+                    }
+                    .first-image {
+                        margin-top: 0px;
+                    }
+                    .third-image {
+                        margin-top: 0px;
+                    }
+                }               
+                
+            }            
+        }
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .works-component {
+        background: no-repeat url('../../../Assets/Home/howItWorks-bg.png');
+        background-position: center;
+        background-size: 100% 100%;
+        padding: 107px 0 108px;
+
+        .works-container {
+            .title {
+                font-size: 34px;
+                margin-bottom: 48px;
+            }
+            .main-row {
+                z-index: 1;
+                .item-area {
+                    .line-height {
+                        line-height: 35px;
+                    }
+                }
+                
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .works-component {
+        background: white;
+        background-position: center;
+        background-size: 100% 100%;
+        padding: 75px 0 0px;
+        .works-container {
+            .title {
+                font-size: 28px;
+                margin-bottom: 21px;
+            }
+            .main-row {
+                .item-area {
+                    margin-bottom: 30px;
+                }
+            }
+        }
+    }
+}

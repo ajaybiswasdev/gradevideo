@@ -1,0 +1,80 @@
+{
+  "name": "front",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@loadable/component": "^5.12.0",
+    "@material-ui/core": "^4.11.0",
+    "@material-ui/icons": "^4.11.2",
+    "@material-ui/lab": "^4.0.0-alpha.56",
+    "@stripe/react-stripe-js": "^1.1.2",
+    "@stripe/stripe-js": "^1.9.0",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "axios": "^0.19.2",
+    "bootstrap": "^4.4.1",
+    "braintree-web": "^3.73.1",
+    "disqus-react": "^1.0.11",
+    "google-maps-react": "^2.0.2",
+    "jquery": "^3.4.1",
+    "moment": "^2.27.0",
+    "moment-timezone": "^0.5.31",
+    "node-sass": "^4.14.1",
+    "numeral": "^2.0.6",
+    "react": "^16.12.0",
+    "react-alice-carousel": "^1.19.3",
+    "react-bootstrap": "^1.0.0-beta.16",
+    "react-calendar": "^2.19.2",
+    "react-calendly": "^1.1.0",
+    "react-dom": "^16.12.0",
+    "react-helmet": "^6.1.0",
+    "react-input-slider": "^6.0.0",
+    "react-intercom": "^1.0.15",
+    "react-keydown": "^1.9.12",
+    "react-media": "^1.10.0",
+    "react-multi-select-component": "^3.0.1",
+    "react-number-format": "^4.4.4",
+    "react-owl-carousel": "^2.3.1",
+    "react-phone-input-2": "^2.13.9",
+    "react-redux": "^7.1.3",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "3.3.0",
+    "react-share": "^4.2.1",
+    "react-slick": "^0.27.14",
+    "react-spinners": "^0.9.0",
+    "react-star-ratings": "^2.3.0",
+    "react-sticky-el": "^2.0.5",
+    "react-stripe-elements": "^6.1.2",
+    "react-svg": "^11.0.9",
+    "react-toastify": "^6.0.8",
+    "react-transition-group": "^4.3.0",
+    "redux": "^4.0.5",
+    "redux-persist": "^6.0.0",
+    "redux-saga": "^1.1.3",
+    "redux-thunk": "^2.3.0",
+    "slick-carousel": "^1.8.1",
+    "video-react": "^0.14.1"
+  },
+  "scripts": {
+    "start": "react-scripts start --open",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

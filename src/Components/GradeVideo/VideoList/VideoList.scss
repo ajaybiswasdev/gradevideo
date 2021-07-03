@@ -1,0 +1,64 @@
+@import '../../../theme.scss';
+
+.VideoList-component {
+    font-family: Maax;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    color: #FFF;
+    background-color: #000;
+
+    h2 {
+        font-weight: 400;
+        margin: 15px 0px;
+    }
+    h3 {
+        font-size: 20px;
+        font-weight: 400;
+        margin: 15px 0px;
+    }
+
+    .video-list-container {
+        padding: 0px;
+        .video-list {
+            padding: 0;
+              
+        }
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .VideoList-component {
+        padding: 70px 100px;
+
+        h2 {
+            font-size: 23px;
+        }
+        
+        .video-list-container {
+            .video-list {
+                padding: 60px 0px;
+                
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .VideoList-component {
+        padding: 70px 30px;
+
+        h2 {
+            font-size: 15px;
+        }
+
+        .video-list-container {
+            padding: 50px 0px;
+
+            .video-list {
+                
+            }
+        }
+    }
+    
+}

@@ -1,0 +1,61 @@
+@import '../../../theme.scss';
+
+.video-carousel-component {
+    .owl-theme {
+        .owl-nav {
+            .owl-prev, .owl-next {
+                outline: none;
+                &:hover {
+                    background: none;
+                }
+            }
+            z-index: 1;
+        }
+        .owl-stage-outer {
+            padding-top: 30px;
+            padding-bottom: 30px;
+            .owl-stage {
+                display: flex;
+            }
+            z-index: 2;
+        }
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .video-carousel-component {
+        .owl-theme {
+            .owl-nav {
+                position: absolute;
+                display: flex;
+                justify-content: space-between;
+                top: 50%;
+                transform: translateY(-50%);
+                margin: 0;
+                left: -50px;
+                right: -50px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .video-carousel-component {
+        .owl-theme {
+            .owl-nav {
+                .owl-prev, .owl-next {
+                    outline: none;
+                    &:hover {
+                        // background: white;
+                    }
+                }
+                .owl-prev {
+                    margin: 0 15px 0 5px;
+                }
+                .owl-next {
+                    margin: 0 5px 0 15px;
+                }
+            }
+        }
+    }
+}

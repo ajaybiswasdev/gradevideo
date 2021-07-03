@@ -1,0 +1,71 @@
+@import '../../../theme.scss';
+
+.accordion-component {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 26px 0;
+    font-family: Maax;
+    color: $secondary-text;
+    .title-area {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        pointer-events: auto;
+        cursor: pointer;
+        .accordion-title {
+            width: calc(100% - 44px);
+            font-size: 20px;
+            line-height: 24px;
+            font-weight: bold;
+        }
+        .icon {
+            cursor: pointer;
+        }
+        .icon-open {
+            fill: $primary-text;
+        }
+        .icon-close {
+            fill: $secondary-text;
+        }
+        .has-icon {
+            fill: white;
+        }
+        .has-icon-close {
+            transform: rotate(90deg);
+            fill: white;
+        }
+    }
+    .accordion-content {
+        font-size: 15px;
+        line-height: 22px;
+        transition: height 200ms 200ms, opacity 200ms 0ms;
+        opacity: 0.0;
+        height: 0px;
+        overflow: hidden;
+        display: block;
+        
+        &.active {
+            opacity: 1.0;
+            height: initial;
+            padding-top: 17px;
+            transition: height 200ms 0ms, opacity 200ms 100ms;
+        }
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .accordion-component {
+        .accordion-content {
+            width: calc(100% - 60px);
+        }
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .accordion-component {
+        .accordion-content {
+            width: 100%;
+        }
+    }
+}

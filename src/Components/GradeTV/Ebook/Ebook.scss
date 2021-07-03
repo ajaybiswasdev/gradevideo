@@ -1,0 +1,187 @@
+@import '../../../theme.scss';
+
+.ebook-component {
+    font-family: Maax;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    color: #000;
+    padding: 50px 0;
+
+    .title {
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .ebook-component {
+        h2 {
+            font-size: 30px;
+        }
+        .description {
+            margin-left: 10px;
+            font-size: 17px;
+        }
+        .body {
+            margin-top: 60px;
+            .chanel-row {
+                display: flex;
+                align-items: center;
+                height: 300px;
+                .big-chanel-img {
+                    padding: 0px;
+                    background-position: center;
+                    background-size: 100% 100%;
+                    background-color: $secondary-bg;
+                    .big-chanel-item {
+                        width: 100%;
+                        height: 100%;
+                        background: linear-gradient(rgba(0, 0, 0, 0), $secondary-bg);
+                        
+                        padding: 230px 10px 67px 10px;
+                        color: #FFF;
+                        
+                        .big-changel-title-category {
+                            font-size: 14px;
+                        }
+                        .big-changel-title {
+                            font-size: 20px;
+                            font-weight: 500px;
+                        }
+                        .big-changel-rule {
+                            font-size: 13px;
+                        }
+                    }
+                    &:hover {
+                        cursor: pointer;
+                        -ms-transform: scale(1.05); /* IE 9 */
+                        -webkit-transform: scale(1.1); /* Safari 3-8 */
+                        transform: scale(1.05);
+                        transition: 1s;
+                        z-index: 9;
+                    }
+                    .big-chanel-item-hover {
+                        background: linear-gradient(rgba(0, 0, 0, 0), $secondary-bg);
+                        box-shadow: 0px 9px 45px rgba(0, 0, 0, 0.5);
+                        z-index: 3;
+                        color: #FFF;
+                        padding-top: 150px;
+                        .big-changel-title-category {
+                            font-size: 14px;
+                            margin-left: 20px;
+                        }
+                        .hover-details {
+                            padding: 20px 10px 20px 10px;
+                            .big-changel-rule-hover {
+                                font-size: 20px;
+                            }
+                            .big-changel-title {
+                                font-size: 20px;
+                                font-weight: 500px;
+                            }
+                            .big-changel-description {
+                                font-size: 17px;
+                            }
+                            .start-watch-btn {
+                                width: 150px;
+                                height: 35px;
+                                border-radius: 20px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                border: #FFF solid 1px;
+                                color: #FFF;
+                                font-size: 12px;
+                                margin-top: 20px;
+
+                                position: relative;
+                                overflow: hidden;
+
+                                .overlay {
+                                    position: absolute;
+                                    width: 100%;
+                                    height: 35px;
+                                    left: -270px;
+                                }
+
+                                &:hover {
+                                    transition: 1s;
+                                    -webkit-transition: all .3s ease-in-out;
+                                    color: #000;
+
+                                    .btn-txt {
+                                        z-index: 9;
+                                    }
+                                    .overlay {
+                                        z-index: 1;
+                                        left: 0;
+                                        margin-left: 0;
+                                        transition: left 300ms ease-out;
+                                        background-color: #FFF;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .ebook-component {
+        h2 {
+            font-size: 24px;
+        }
+        .description {
+            margin-left: 10px;
+            font-size: 17px;
+        }
+        .body {
+            margin-top: 60px;
+            .chanel-row {
+                display: flex;
+                align-items: center;
+                flex-wrap: wrap;
+                .big-chanel-img {
+                    padding: 0px;
+                    background-position: center;
+                    background-size: 100% 100%;
+                    background-color: #FFF;
+                    .big-chanel-item {
+                        width: 100%;
+                        height: 100%;
+                        background: linear-gradient(rgba(0, 0, 0, 0), $secondary-bg);
+                        
+                        padding: 100px 0px 20px 20px;
+                        color: #FFF;
+                        
+                        .big-changel-title-category {
+                            font-size: 14px;
+                        }
+                        .big-changel-title {
+                            font-size: 20px;
+                            font-weight: 500px;
+                        }
+
+                        .start-watch-btn {
+                            width: 150px;
+                            height: 35px;
+                            border-radius: 20px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            border: #FFF solid 1px;
+                            color: #FFF;
+                            font-size: 12px;
+                            margin-top: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}

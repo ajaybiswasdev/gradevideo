@@ -1,0 +1,249 @@
+@import '../../../theme.scss';
+
+.channels-component {
+    font-family: Maax;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    color: #000;
+    margin-top: -173px;
+    .title {
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .channels-component {
+        h2 {
+            font-size: 30px;
+        }
+        .description {
+            margin-left: 10px;
+            font-size: 17px;
+        }
+        .body {
+            .slick-prev {
+                left: -31px;
+                z-index: 10;
+            }
+            .slick-next {
+                right: 0px;
+            }
+            .slick-prev:before {
+                font-size: 50px;
+                color: $secondary-bg;
+            }
+            .slick-next:before{
+                font-size: 50px;
+                color: $secondary-bg;
+            }
+            .item {
+                height: 550px;
+                display: flex !important;
+                flex-direction: column;
+                justify-content: center;
+                .big-chanel-img {
+
+                    .big-chanel-item {
+                        position: relative;
+                        .chalel-cover-img {
+                            width: 100%;
+                            height: 100%;                            
+                        }
+
+                        .big-chanel-item-content {
+                            background: linear-gradient(rgba(0, 0, 0, 0), $secondary-bg);
+                            width: 100%;
+                            height: 100%;
+                            color: #FFF;
+
+                            position: absolute;
+                            top: 0px;
+                            padding: 220px 0px 67px 20px;
+
+                            .chalel-logo {
+                                height: 30px;
+                                margin-bottom: 30px;
+                            }
+
+                            .big-changel-title-category {
+                                font-size: 14px;
+                            }
+                            .big-changel-title {
+                                font-size: 20px;
+                                font-weight: 500px;
+                            }
+                            .big-changel-rule {
+                                font-size: 13px;
+                            }
+                        }
+                        
+                    }
+                    &:hover {
+                        cursor: pointer;
+                        -ms-transform: scale(1.05); /* IE 9 */
+                        // -webkit-transform: scale(1.1); /* Safari 3-8 */
+                        transform: scale(1.05); 
+                        transition: 1s;
+                        z-index: 99;
+                    }
+
+                    .big-chanel-item-hover {                        
+                        position: relative;
+                        .chalel-cover-img {
+                            width: 105%;
+                            height: 100%;                       
+                        }
+
+                        .big-chanel-item-content-hover {
+                            background: linear-gradient(rgba(0, 0, 0, 0), $secondary-bg);
+                            box-shadow: 0px 9px 45px rgba(0, 0, 0, 0.5);
+                            width: 105%;
+                            height: 100%;
+                            z-index: 3;
+                            color: #FFF;
+
+                            position: absolute;
+                            top: 0px;
+                            padding-top: 120px;
+
+                            .big-changel-title-category {
+                                font-size: 14px;
+                                margin-left: 20px;
+                            }
+                            .hover-details {
+                                background: linear-gradient(rgba(0, 0, 0, 0), $secondary-bg);
+                                padding: 20px 20px 20px 20px;
+                                .big-changel-rule-hover {
+                                    font-size: 20px;
+                                }
+                                .big-changel-title {
+                                    font-size: 20px;
+                                    font-weight: 500px;
+                                }
+                                .big-changel-description {
+                                    font-size: 17px;
+                                }
+    
+                                .start-watch-btn {
+                                    width: 150px;
+                                    height: 35px;
+                                    border-radius: 20px;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    border: #FFF solid 1px;
+                                    color: #FFF;
+                                    font-size: 12px;
+                                    margin-top: 20px;
+    
+                                    position: relative;
+                                    overflow: hidden;
+    
+                                    .overlay {
+                                        position: absolute;
+                                        width: 100%;
+                                        height: 35px;
+                                        left: -270px;
+                                    }
+    
+                                    &:hover {
+                                        transition: 1s;
+                                        -webkit-transition: all .3s ease-in-out;
+                                        color: #000;
+    
+                                        .btn-txt {
+                                            z-index: 9;
+                                        }
+                                        .overlay {
+                                            z-index: 1;
+                                            left: 0;
+                                            margin-left: 0;
+                                            transition: left 300ms ease-out;
+                                            background-color: #FFF;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .channels-component {
+        h2 {
+            font-size: 24px;
+        }
+        .description {
+            margin-left: 10px;
+            font-size: 17px;
+        }
+        .body {
+            .slick-prev {
+                left: 0px;
+                z-index: 10;
+            }
+            .slick-next {
+                right: 12px;
+            }
+            .slick-prev:before {
+                font-size: 30px;
+            }
+            .slick-next:before{
+                font-size: 30px;
+            }
+            .item {
+                height: 500px;
+                display: flex !important;
+                flex-direction: column;
+                justify-content: center;
+                .big-chanel-img {
+
+                    .big-chanel-item {
+                        width: 100%;
+                        height: 100%;
+                        background: linear-gradient(rgba(0, 0, 0, 0), $secondary-bg);
+                        
+                        padding: 100px 0px 30px 40px;
+                        color: #FFF;
+                        
+                        .big-chanel-item-content {
+                            height: 70px;                            
+                            .big-changel-title-category {
+                                font-size: 14px;
+                            }
+                            .big-changel-title {
+                                font-size: 20px;
+                                font-weight: 500px;
+                            }
+                            .big-changel-rule {
+                                font-size: 13px;
+                            }
+                        }
+
+                        .start-watch-btn {
+                            width: 150px;
+                            height: 35px;
+                            border-radius: 20px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            border: #FFF solid 1px;
+                            color: #FFF;
+                            font-size: 12px;
+                            margin-top: 20px;
+                        }
+                    }
+                   
+                    
+                }
+            }
+        }
+    }
+    
+}

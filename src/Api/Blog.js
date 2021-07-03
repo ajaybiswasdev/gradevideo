@@ -1,0 +1,208 @@
+import article1 from '../Assets/Blog/article-1.png';
+import article2 from '../Assets/Blog/article-2.png';
+import article3 from '../Assets/Blog/article-3.png';
+import tutor1 from '../Assets/Home/tutor-photo-1.png';
+import articlepic from '../Assets/Blog/article-pic.png';
+
+export const Articles = [
+    { 
+        id: 1, 
+        bg: article1, 
+        title: 'Shazam!<br />How Editor Michel Aller Transformed into a Blockbuster Editor', 
+        category: 'Accounting', 
+        last_read: '5 min', 
+        description: 'Neuroscience is a multidisciplinary science that is concerned with the study of the structure and function Neuroscience is a multidisciplinary science that is concerned with the study of the structure and function',
+        tutor_info: {
+            name: 'Shahodat A.',
+            photo: tutor1,
+            birthday: '18 February, 2019',
+            job: 'Experienced and Passionate Tutor',
+            school: 'University of Texas in Arlington',
+            role: 'FrogTutoring Tutor Based in Kansas City, MO',
+            overview: `I am a chemistry B.A. major and a Biology minor currently finishing my senior year at University of Missouri- Kansas City. I have tutored my classmates and friends in various subject areas.`,
+        },
+        content: `
+            <article><p>Learning a foreign language is by no means a piece of cake, but it is definitely not impossible. Back in middle school, I remember when I first found out that I would be taking Spanish classes, I was quite nervous. However, I quickly found myself very interested, and I developed my own strategies to effectively learn Spanish and do well in my future Spanish courses. I am not from a Spanish speaking country and I do not have any Spanish speaking friends. Fortunately, both in middle school and high school, I was able to receive a Spanish achievement award during the awards ceremonies. The strategies that I developed will guide students to excel in their beginner as well as more advanced Spanish courses.</p></article>
+            <article><h2>1. Have a Solid Knowledge of the Basics.</h2><p> As a student, you must be able to know the basics in the Spanish language. By basics I mean the alphabet, colors, days of the week, months, seasons, and etc. You should also know the definition of basic words such as name, age, and origin. The next step to knowing the basics is repetition. You must make flashcards with pronunciations, and also you must write out each new word multiple times in order to memorize the correct spelling.</p></article>
+            <article><h2>2. Translate the familiar words first.</h2><p> When you read a sentence and don’t understand the meaning of a sentence, translate word by word. For instance, ¿Quantos años tienes? may seem unclear at first, however, if you translate each word, the question will make a lot of sense. Quantos means How many? Años means years, and tienes means you have. By translating each word you can figure out that the question is asking about your age. This is a simple example, however, you can use the same tactics for more complex questions/ sentences. You can even pick out children’s Spanish books and translate each word to practice your translation skills.</p></article>
+            <article><h2>3.Familiarize yourself with the infinitive form and all of the conjugations.</h2><p>The infinitive form of the verb has AR, ER, or IR ending such as hablar, comer, and vivir. Make sure you know that the infinitive form is to+ verb such as hablar is to + speak. Many people confuse the conjugated forms of the verb. Therefore, make sure you know that hablo, hablas, habla, hablamos, and hablan all refer to the verb hablar which means to speak. However, they do not mean the same thing, each form refers to its own pronoun.  For instance, when you see the word hablan do not say it automatically think that it means to speak, recognize that this verb is conjugated and it refers to THEY speak.</p></article>
+            <article><h2>4. Repetition, repetition, repetitionI can not stress enough repetition can help you learn quickly. </h2><p>Make notes, flashcards, and repeat the new words as much as possible. Another great way of memorizing is writing out the names of objects in Spanish on a sticky note and sticking it to the corresponding object. For instance, you can put a sticky note with the word SILLA on a chair, MESA on a table, and etc. Each time you will look at these objects you will see the Spanish translation along with the correct spelling. </p><img src='${articlepic}' alt='article-pic' /></article>
+            <article><h2>5. Watch Videos.</h2><p>Nowadays, we all go on youtube and watch some sort of a video in varying lengths. Every once in a while, just search for a Spanish movie with Spanish subtitles and also English subtitles. You do not have to watch an entire episode, you can just watch a few minutes every day. When you read the previous sentence, you might think why Spanish subtitles? Well, reading the Spanish subtitles will allow you to get better at spelling, and also sometimes the actors might speak too fast, so if you read the subtitles you might better understand the meaning. Also, the English subtitles will allow you to get the meaning of simple and more complex words. For instance, after you hear the word VAMOS, or ¿Que Paso? multiple times you will quickly learn their meaning since Spanish speaking people use them a lot.</p></article>
+        `
+    },
+    { 
+        id: 2, 
+        bg: article2, 
+        title: '6 Simple Ways You Can Use Neuroscience to Increase', 
+        category: 'Maths', 
+        last_read: '5 min', 
+        description: 'Neuroscience is a multidisciplinary science that is concerned with the study of the structure and function Neuroscience is a multidisciplinary science that is concerned with the study of the structure and function',
+        tutor_info: {
+            name: 'Shahodat A.',
+            photo: tutor1,
+            birthday: '18 February, 2019',
+            job: 'Experienced and Passionate Tutor',
+            school: 'University of Texas in Arlington',
+            role: 'FrogTutoring Tutor Based in Kansas City, MO',
+            overview: `I am a chemistry B.A. major and a Biology minor currently finishing my senior year at University of Missouri- Kansas City. I have tutored my classmates and friends in various subject areas.`,
+        },
+        content: `
+            <article><p>Learning a foreign language is by no means a piece of cake, but it is definitely not impossible. Back in middle school, I remember when I first found out that I would be taking Spanish classes, I was quite nervous. However, I quickly found myself very interested, and I developed my own strategies to effectively learn Spanish and do well in my future Spanish courses. I am not from a Spanish speaking country and I do not have any Spanish speaking friends. Fortunately, both in middle school and high school, I was able to receive a Spanish achievement award during the awards ceremonies. The strategies that I developed will guide students to excel in their beginner as well as more advanced Spanish courses.</p></article>
+            <article><h2>1. Have a Solid Knowledge of the Basics.</h2><p> As a student, you must be able to know the basics in the Spanish language. By basics I mean the alphabet, colors, days of the week, months, seasons, and etc. You should also know the definition of basic words such as name, age, and origin. The next step to knowing the basics is repetition. You must make flashcards with pronunciations, and also you must write out each new word multiple times in order to memorize the correct spelling.</p></article>
+            <article><h2>2. Translate the familiar words first.</h2><p> When you read a sentence and don’t understand the meaning of a sentence, translate word by word. For instance, ¿Quantos años tienes? may seem unclear at first, however, if you translate each word, the question will make a lot of sense. Quantos means How many? Años means years, and tienes means you have. By translating each word you can figure out that the question is asking about your age. This is a simple example, however, you can use the same tactics for more complex questions/ sentences. You can even pick out children’s Spanish books and translate each word to practice your translation skills.</p></article>
+            <article><h2>3.Familiarize yourself with the infinitive form and all of the conjugations.</h2><p>The infinitive form of the verb has AR, ER, or IR ending such as hablar, comer, and vivir. Make sure you know that the infinitive form is to+ verb such as hablar is to + speak. Many people confuse the conjugated forms of the verb. Therefore, make sure you know that hablo, hablas, habla, hablamos, and hablan all refer to the verb hablar which means to speak. However, they do not mean the same thing, each form refers to its own pronoun.  For instance, when you see the word hablan do not say it automatically think that it means to speak, recognize that this verb is conjugated and it refers to THEY speak.</p></article>
+            <article><h2>4. Repetition, repetition, repetitionI can not stress enough repetition can help you learn quickly. </h2><p>Make notes, flashcards, and repeat the new words as much as possible. Another great way of memorizing is writing out the names of objects in Spanish on a sticky note and sticking it to the corresponding object. For instance, you can put a sticky note with the word SILLA on a chair, MESA on a table, and etc. Each time you will look at these objects you will see the Spanish translation along with the correct spelling. </p><img src='${articlepic}' alt='article-pic' /></article>
+            <article><h2>5. Watch Videos.</h2><p>Nowadays, we all go on youtube and watch some sort of a video in varying lengths. Every once in a while, just search for a Spanish movie with Spanish subtitles and also English subtitles. You do not have to watch an entire episode, you can just watch a few minutes every day. When you read the previous sentence, you might think why Spanish subtitles? Well, reading the Spanish subtitles will allow you to get better at spelling, and also sometimes the actors might speak too fast, so if you read the subtitles you might better understand the meaning. Also, the English subtitles will allow you to get the meaning of simple and more complex words. For instance, after you hear the word VAMOS, or ¿Que Paso? multiple times you will quickly learn their meaning since Spanish speaking people use them a lot.</p></article>
+        `
+    },
+    { 
+        id: 3, 
+        bg: article3, 
+        title: '6 Simple Ways You Can Use Neuroscience to Increase', 
+        category: 'Algebra', 
+        last_read: '5 min', 
+        description: 'Neuroscience is a multidisciplinary science that is concerned with the study of the structure and function Neuroscience is a multidisciplinary science that is concerned with the study of the structure and function',
+        tutor_info: {
+            name: 'Shahodat A.',
+            photo: tutor1,
+            birthday: '18 February, 2019',
+            job: 'Experienced and Passionate Tutor',
+            school: 'University of Texas in Arlington',
+            role: 'FrogTutoring Tutor Based in Kansas City, MO',
+            overview: `I am a chemistry B.A. major and a Biology minor currently finishing my senior year at University of Missouri- Kansas City. I have tutored my classmates and friends in various subject areas.`,
+        },
+        content: `
+            <article><p>Learning a foreign language is by no means a piece of cake, but it is definitely not impossible. Back in middle school, I remember when I first found out that I would be taking Spanish classes, I was quite nervous. However, I quickly found myself very interested, and I developed my own strategies to effectively learn Spanish and do well in my future Spanish courses. I am not from a Spanish speaking country and I do not have any Spanish speaking friends. Fortunately, both in middle school and high school, I was able to receive a Spanish achievement award during the awards ceremonies. The strategies that I developed will guide students to excel in their beginner as well as more advanced Spanish courses.</p></article>
+            <article><h2>1. Have a Solid Knowledge of the Basics.</h2><p> As a student, you must be able to know the basics in the Spanish language. By basics I mean the alphabet, colors, days of the week, months, seasons, and etc. You should also know the definition of basic words such as name, age, and origin. The next step to knowing the basics is repetition. You must make flashcards with pronunciations, and also you must write out each new word multiple times in order to memorize the correct spelling.</p></article>
+            <article><h2>2. Translate the familiar words first.</h2><p> When you read a sentence and don’t understand the meaning of a sentence, translate word by word. For instance, ¿Quantos años tienes? may seem unclear at first, however, if you translate each word, the question will make a lot of sense. Quantos means How many? Años means years, and tienes means you have. By translating each word you can figure out that the question is asking about your age. This is a simple example, however, you can use the same tactics for more complex questions/ sentences. You can even pick out children’s Spanish books and translate each word to practice your translation skills.</p></article>
+            <article><h2>3.Familiarize yourself with the infinitive form and all of the conjugations.</h2><p>The infinitive form of the verb has AR, ER, or IR ending such as hablar, comer, and vivir. Make sure you know that the infinitive form is to+ verb such as hablar is to + speak. Many people confuse the conjugated forms of the verb. Therefore, make sure you know that hablo, hablas, habla, hablamos, and hablan all refer to the verb hablar which means to speak. However, they do not mean the same thing, each form refers to its own pronoun.  For instance, when you see the word hablan do not say it automatically think that it means to speak, recognize that this verb is conjugated and it refers to THEY speak.</p></article>
+            <article><h2>4. Repetition, repetition, repetitionI can not stress enough repetition can help you learn quickly. </h2><p>Make notes, flashcards, and repeat the new words as much as possible. Another great way of memorizing is writing out the names of objects in Spanish on a sticky note and sticking it to the corresponding object. For instance, you can put a sticky note with the word SILLA on a chair, MESA on a table, and etc. Each time you will look at these objects you will see the Spanish translation along with the correct spelling. </p><img src='${articlepic}' alt='article-pic' /></article>
+            <article><h2>5. Watch Videos.</h2><p>Nowadays, we all go on youtube and watch some sort of a video in varying lengths. Every once in a while, just search for a Spanish movie with Spanish subtitles and also English subtitles. You do not have to watch an entire episode, you can just watch a few minutes every day. When you read the previous sentence, you might think why Spanish subtitles? Well, reading the Spanish subtitles will allow you to get better at spelling, and also sometimes the actors might speak too fast, so if you read the subtitles you might better understand the meaning. Also, the English subtitles will allow you to get the meaning of simple and more complex words. For instance, after you hear the word VAMOS, or ¿Que Paso? multiple times you will quickly learn their meaning since Spanish speaking people use them a lot.</p></article>
+        `
+    },
+    { 
+        id: 4, 
+        bg: article2, 
+        title: '6 Simple Ways You Can Use Neuroscience to Increase', 
+        category: 'Calculus', 
+        last_read: '5 min', 
+        description: 'Neuroscience is a multidisciplinary science that is concerned with the study of the structure and function Neuroscience is a multidisciplinary science that is concerned with the study of the structure and function',
+        tutor_info: {
+            name: 'Shahodat A.',
+            photo: tutor1,
+            birthday: '18 February, 2019',
+            job: 'Experienced and Passionate Tutor',
+            school: 'University of Texas in Arlington',
+            role: 'FrogTutoring Tutor Based in Kansas City, MO',
+            overview: `I am a chemistry B.A. major and a Biology minor currently finishing my senior year at University of Missouri- Kansas City. I have tutored my classmates and friends in various subject areas.`,
+        },
+        content: `
+            <article><p>Learning a foreign language is by no means a piece of cake, but it is definitely not impossible. Back in middle school, I remember when I first found out that I would be taking Spanish classes, I was quite nervous. However, I quickly found myself very interested, and I developed my own strategies to effectively learn Spanish and do well in my future Spanish courses. I am not from a Spanish speaking country and I do not have any Spanish speaking friends. Fortunately, both in middle school and high school, I was able to receive a Spanish achievement award during the awards ceremonies. The strategies that I developed will guide students to excel in their beginner as well as more advanced Spanish courses.</p></article>
+            <article><h2>1. Have a Solid Knowledge of the Basics.</h2><p> As a student, you must be able to know the basics in the Spanish language. By basics I mean the alphabet, colors, days of the week, months, seasons, and etc. You should also know the definition of basic words such as name, age, and origin. The next step to knowing the basics is repetition. You must make flashcards with pronunciations, and also you must write out each new word multiple times in order to memorize the correct spelling.</p></article>
+            <article><h2>2. Translate the familiar words first.</h2><p> When you read a sentence and don’t understand the meaning of a sentence, translate word by word. For instance, ¿Quantos años tienes? may seem unclear at first, however, if you translate each word, the question will make a lot of sense. Quantos means How many? Años means years, and tienes means you have. By translating each word you can figure out that the question is asking about your age. This is a simple example, however, you can use the same tactics for more complex questions/ sentences. You can even pick out children’s Spanish books and translate each word to practice your translation skills.</p></article>
+            <article><h2>3.Familiarize yourself with the infinitive form and all of the conjugations.</h2><p>The infinitive form of the verb has AR, ER, or IR ending such as hablar, comer, and vivir. Make sure you know that the infinitive form is to+ verb such as hablar is to + speak. Many people confuse the conjugated forms of the verb. Therefore, make sure you know that hablo, hablas, habla, hablamos, and hablan all refer to the verb hablar which means to speak. However, they do not mean the same thing, each form refers to its own pronoun.  For instance, when you see the word hablan do not say it automatically think that it means to speak, recognize that this verb is conjugated and it refers to THEY speak.</p></article>
+            <article><h2>4. Repetition, repetition, repetitionI can not stress enough repetition can help you learn quickly. </h2><p>Make notes, flashcards, and repeat the new words as much as possible. Another great way of memorizing is writing out the names of objects in Spanish on a sticky note and sticking it to the corresponding object. For instance, you can put a sticky note with the word SILLA on a chair, MESA on a table, and etc. Each time you will look at these objects you will see the Spanish translation along with the correct spelling. </p><img src='${articlepic}' alt='article-pic' /></article>
+            <article><h2>5. Watch Videos.</h2><p>Nowadays, we all go on youtube and watch some sort of a video in varying lengths. Every once in a while, just search for a Spanish movie with Spanish subtitles and also English subtitles. You do not have to watch an entire episode, you can just watch a few minutes every day. When you read the previous sentence, you might think why Spanish subtitles? Well, reading the Spanish subtitles will allow you to get better at spelling, and also sometimes the actors might speak too fast, so if you read the subtitles you might better understand the meaning. Also, the English subtitles will allow you to get the meaning of simple and more complex words. For instance, after you hear the word VAMOS, or ¿Que Paso? multiple times you will quickly learn their meaning since Spanish speaking people use them a lot.</p></article>
+        `
+    },
+    { 
+        id: 5, 
+        bg: article3, 
+        title: '6 Simple Ways You Can Use Neuroscience to Increase', 
+        category: 'Geometry', 
+        last_read: '5 min', 
+        description: 'Neuroscience is a multidisciplinary science that is concerned with the study of the structure and function Neuroscience is a multidisciplinary science that is concerned with the study of the structure and function',
+        tutor_info: {
+            name: 'Shahodat A.',
+            photo: tutor1,
+            birthday: '18 February, 2019',
+            job: 'Experienced and Passionate Tutor',
+            school: 'University of Texas in Arlington',
+            role: 'FrogTutoring Tutor Based in Kansas City, MO',
+            overview: `I am a chemistry B.A. major and a Biology minor currently finishing my senior year at University of Missouri- Kansas City. I have tutored my classmates and friends in various subject areas.`,
+        },
+        content: `
+            <article><p>Learning a foreign language is by no means a piece of cake, but it is definitely not impossible. Back in middle school, I remember when I first found out that I would be taking Spanish classes, I was quite nervous. However, I quickly found myself very interested, and I developed my own strategies to effectively learn Spanish and do well in my future Spanish courses. I am not from a Spanish speaking country and I do not have any Spanish speaking friends. Fortunately, both in middle school and high school, I was able to receive a Spanish achievement award during the awards ceremonies. The strategies that I developed will guide students to excel in their beginner as well as more advanced Spanish courses.</p></article>
+            <article><h2>1. Have a Solid Knowledge of the Basics.</h2><p> As a student, you must be able to know the basics in the Spanish language. By basics I mean the alphabet, colors, days of the week, months, seasons, and etc. You should also know the definition of basic words such as name, age, and origin. The next step to knowing the basics is repetition. You must make flashcards with pronunciations, and also you must write out each new word multiple times in order to memorize the correct spelling.</p></article>
+            <article><h2>2. Translate the familiar words first.</h2><p> When you read a sentence and don’t understand the meaning of a sentence, translate word by word. For instance, ¿Quantos años tienes? may seem unclear at first, however, if you translate each word, the question will make a lot of sense. Quantos means How many? Años means years, and tienes means you have. By translating each word you can figure out that the question is asking about your age. This is a simple example, however, you can use the same tactics for more complex questions/ sentences. You can even pick out children’s Spanish books and translate each word to practice your translation skills.</p></article>
+            <article><h2>3.Familiarize yourself with the infinitive form and all of the conjugations.</h2><p>The infinitive form of the verb has AR, ER, or IR ending such as hablar, comer, and vivir. Make sure you know that the infinitive form is to+ verb such as hablar is to + speak. Many people confuse the conjugated forms of the verb. Therefore, make sure you know that hablo, hablas, habla, hablamos, and hablan all refer to the verb hablar which means to speak. However, they do not mean the same thing, each form refers to its own pronoun.  For instance, when you see the word hablan do not say it automatically think that it means to speak, recognize that this verb is conjugated and it refers to THEY speak.</p></article>
+            <article><h2>4. Repetition, repetition, repetitionI can not stress enough repetition can help you learn quickly. </h2><p>Make notes, flashcards, and repeat the new words as much as possible. Another great way of memorizing is writing out the names of objects in Spanish on a sticky note and sticking it to the corresponding object. For instance, you can put a sticky note with the word SILLA on a chair, MESA on a table, and etc. Each time you will look at these objects you will see the Spanish translation along with the correct spelling. </p><img src='${articlepic}' alt='article-pic' /></article>
+            <article><h2>5. Watch Videos.</h2><p>Nowadays, we all go on youtube and watch some sort of a video in varying lengths. Every once in a while, just search for a Spanish movie with Spanish subtitles and also English subtitles. You do not have to watch an entire episode, you can just watch a few minutes every day. When you read the previous sentence, you might think why Spanish subtitles? Well, reading the Spanish subtitles will allow you to get better at spelling, and also sometimes the actors might speak too fast, so if you read the subtitles you might better understand the meaning. Also, the English subtitles will allow you to get the meaning of simple and more complex words. For instance, after you hear the word VAMOS, or ¿Que Paso? multiple times you will quickly learn their meaning since Spanish speaking people use them a lot.</p></article>
+        `
+    },
+    { 
+        id: 6, 
+        bg: article2, 
+        title: '6 Simple Ways You Can Use Neuroscience to Increase', 
+        category: 'Study skills', 
+        last_read: '5 min', 
+        description: 'Neuroscience is a multidisciplinary science that is concerned with the study of the structure and function Neuroscience is a multidisciplinary science that is concerned with the study of the structure and function',
+        tutor_info: {
+            name: 'Shahodat A.',
+            photo: tutor1,
+            birthday: '18 February, 2019',
+            job: 'Experienced and Passionate Tutor',
+            school: 'University of Texas in Arlington',
+            role: 'FrogTutoring Tutor Based in Kansas City, MO',
+            overview: `I am a chemistry B.A. major and a Biology minor currently finishing my senior year at University of Missouri- Kansas City. I have tutored my classmates and friends in various subject areas.`,
+        },
+        content: `
+            <article><p>Learning a foreign language is by no means a piece of cake, but it is definitely not impossible. Back in middle school, I remember when I first found out that I would be taking Spanish classes, I was quite nervous. However, I quickly found myself very interested, and I developed my own strategies to effectively learn Spanish and do well in my future Spanish courses. I am not from a Spanish speaking country and I do not have any Spanish speaking friends. Fortunately, both in middle school and high school, I was able to receive a Spanish achievement award during the awards ceremonies. The strategies that I developed will guide students to excel in their beginner as well as more advanced Spanish courses.</p></article>
+            <article><h2>1. Have a Solid Knowledge of the Basics.</h2><p> As a student, you must be able to know the basics in the Spanish language. By basics I mean the alphabet, colors, days of the week, months, seasons, and etc. You should also know the definition of basic words such as name, age, and origin. The next step to knowing the basics is repetition. You must make flashcards with pronunciations, and also you must write out each new word multiple times in order to memorize the correct spelling.</p></article>
+            <article><h2>2. Translate the familiar words first.</h2><p> When you read a sentence and don’t understand the meaning of a sentence, translate word by word. For instance, ¿Quantos años tienes? may seem unclear at first, however, if you translate each word, the question will make a lot of sense. Quantos means How many? Años means years, and tienes means you have. By translating each word you can figure out that the question is asking about your age. This is a simple example, however, you can use the same tactics for more complex questions/ sentences. You can even pick out children’s Spanish books and translate each word to practice your translation skills.</p></article>
+            <article><h2>3.Familiarize yourself with the infinitive form and all of the conjugations.</h2><p>The infinitive form of the verb has AR, ER, or IR ending such as hablar, comer, and vivir. Make sure you know that the infinitive form is to+ verb such as hablar is to + speak. Many people confuse the conjugated forms of the verb. Therefore, make sure you know that hablo, hablas, habla, hablamos, and hablan all refer to the verb hablar which means to speak. However, they do not mean the same thing, each form refers to its own pronoun.  For instance, when you see the word hablan do not say it automatically think that it means to speak, recognize that this verb is conjugated and it refers to THEY speak.</p></article>
+            <article><h2>4. Repetition, repetition, repetitionI can not stress enough repetition can help you learn quickly. </h2><p>Make notes, flashcards, and repeat the new words as much as possible. Another great way of memorizing is writing out the names of objects in Spanish on a sticky note and sticking it to the corresponding object. For instance, you can put a sticky note with the word SILLA on a chair, MESA on a table, and etc. Each time you will look at these objects you will see the Spanish translation along with the correct spelling. </p><img src='${articlepic}' alt='article-pic' /></article>
+            <article><h2>5. Watch Videos.</h2><p>Nowadays, we all go on youtube and watch some sort of a video in varying lengths. Every once in a while, just search for a Spanish movie with Spanish subtitles and also English subtitles. You do not have to watch an entire episode, you can just watch a few minutes every day. When you read the previous sentence, you might think why Spanish subtitles? Well, reading the Spanish subtitles will allow you to get better at spelling, and also sometimes the actors might speak too fast, so if you read the subtitles you might better understand the meaning. Also, the English subtitles will allow you to get the meaning of simple and more complex words. For instance, after you hear the word VAMOS, or ¿Que Paso? multiple times you will quickly learn their meaning since Spanish speaking people use them a lot.</p></article>
+        `
+    },
+    { 
+        id: 7, 
+        bg: article3, 
+        title: '6 Simple Ways You Can Use Neuroscience to Increase',
+        category: 'Tutoring program', 
+        last_read: '5 min', 
+        description: 'Neuroscience is a multidisciplinary science that is concerned with the study of the structure and function Neuroscience is a multidisciplinary science that is concerned with the study of the structure and function',
+        tutor_info: {
+            name: 'Shahodat A.',
+            photo: tutor1,
+            birthday: '18 February, 2019',
+            job: 'Experienced and Passionate Tutor',
+            school: 'University of Texas in Arlington',
+            role: 'FrogTutoring Tutor Based in Kansas City, MO',
+            overview: `I am a chemistry B.A. major and a Biology minor currently finishing my senior year at University of Missouri- Kansas City. I have tutored my classmates and friends in various subject areas.`,
+        },
+        content: `
+            <article><p>Learning a foreign language is by no means a piece of cake, but it is definitely not impossible. Back in middle school, I remember when I first found out that I would be taking Spanish classes, I was quite nervous. However, I quickly found myself very interested, and I developed my own strategies to effectively learn Spanish and do well in my future Spanish courses. I am not from a Spanish speaking country and I do not have any Spanish speaking friends. Fortunately, both in middle school and high school, I was able to receive a Spanish achievement award during the awards ceremonies. The strategies that I developed will guide students to excel in their beginner as well as more advanced Spanish courses.</p></article>
+            <article><h2>1. Have a Solid Knowledge of the Basics.</h2><p> As a student, you must be able to know the basics in the Spanish language. By basics I mean the alphabet, colors, days of the week, months, seasons, and etc. You should also know the definition of basic words such as name, age, and origin. The next step to knowing the basics is repetition. You must make flashcards with pronunciations, and also you must write out each new word multiple times in order to memorize the correct spelling.</p></article>
+            <article><h2>2. Translate the familiar words first.</h2><p> When you read a sentence and don’t understand the meaning of a sentence, translate word by word. For instance, ¿Quantos años tienes? may seem unclear at first, however, if you translate each word, the question will make a lot of sense. Quantos means How many? Años means years, and tienes means you have. By translating each word you can figure out that the question is asking about your age. This is a simple example, however, you can use the same tactics for more complex questions/ sentences. You can even pick out children’s Spanish books and translate each word to practice your translation skills.</p></article>
+            <article><h2>3.Familiarize yourself with the infinitive form and all of the conjugations.</h2><p>The infinitive form of the verb has AR, ER, or IR ending such as hablar, comer, and vivir. Make sure you know that the infinitive form is to+ verb such as hablar is to + speak. Many people confuse the conjugated forms of the verb. Therefore, make sure you know that hablo, hablas, habla, hablamos, and hablan all refer to the verb hablar which means to speak. However, they do not mean the same thing, each form refers to its own pronoun.  For instance, when you see the word hablan do not say it automatically think that it means to speak, recognize that this verb is conjugated and it refers to THEY speak.</p></article>
+            <article><h2>4. Repetition, repetition, repetitionI can not stress enough repetition can help you learn quickly. </h2><p>Make notes, flashcards, and repeat the new words as much as possible. Another great way of memorizing is writing out the names of objects in Spanish on a sticky note and sticking it to the corresponding object. For instance, you can put a sticky note with the word SILLA on a chair, MESA on a table, and etc. Each time you will look at these objects you will see the Spanish translation along with the correct spelling. </p><img src='${articlepic}' alt='article-pic' /></article>
+            <article><h2>5. Watch Videos.</h2><p>Nowadays, we all go on youtube and watch some sort of a video in varying lengths. Every once in a while, just search for a Spanish movie with Spanish subtitles and also English subtitles. You do not have to watch an entire episode, you can just watch a few minutes every day. When you read the previous sentence, you might think why Spanish subtitles? Well, reading the Spanish subtitles will allow you to get better at spelling, and also sometimes the actors might speak too fast, so if you read the subtitles you might better understand the meaning. Also, the English subtitles will allow you to get the meaning of simple and more complex words. For instance, after you hear the word VAMOS, or ¿Que Paso? multiple times you will quickly learn their meaning since Spanish speaking people use them a lot.</p></article>
+        `
+    },
+    { 
+        id: 8, 
+        bg: article2, 
+        title: '6 Simple Ways You Can Use Neuroscience to Increase', 
+        category: 'Grammar', 
+        last_read: '5 min', 
+        description: 'Neuroscience is a multidisciplinary science that is concerned with the study of the structure and function Neuroscience is a multidisciplinary science that is concerned with the study of the structure and function',
+        tutor_info: {
+            name: 'Shahodat A.',
+            photo: tutor1,
+            birthday: '18 February, 2019',
+            job: 'Experienced and Passionate Tutor',
+            school: 'University of Texas in Arlington',
+            role: 'FrogTutoring Tutor Based in Kansas City, MO',
+            overview: `I am a chemistry B.A. major and a Biology minor currently finishing my senior year at University of Missouri- Kansas City. I have tutored my classmates and friends in various subject areas.`,
+        },
+        content: `
+            <article><p>Learning a foreign language is by no means a piece of cake, but it is definitely not impossible. Back in middle school, I remember when I first found out that I would be taking Spanish classes, I was quite nervous. However, I quickly found myself very interested, and I developed my own strategies to effectively learn Spanish and do well in my future Spanish courses. I am not from a Spanish speaking country and I do not have any Spanish speaking friends. Fortunately, both in middle school and high school, I was able to receive a Spanish achievement award during the awards ceremonies. The strategies that I developed will guide students to excel in their beginner as well as more advanced Spanish courses.</p></article>
+            <article><h2>1. Have a Solid Knowledge of the Basics.</h2><p> As a student, you must be able to know the basics in the Spanish language. By basics I mean the alphabet, colors, days of the week, months, seasons, and etc. You should also know the definition of basic words such as name, age, and origin. The next step to knowing the basics is repetition. You must make flashcards with pronunciations, and also you must write out each new word multiple times in order to memorize the correct spelling.</p></article>
+            <article><h2>2. Translate the familiar words first.</h2><p> When you read a sentence and don’t understand the meaning of a sentence, translate word by word. For instance, ¿Quantos años tienes? may seem unclear at first, however, if you translate each word, the question will make a lot of sense. Quantos means How many? Años means years, and tienes means you have. By translating each word you can figure out that the question is asking about your age. This is a simple example, however, you can use the same tactics for more complex questions/ sentences. You can even pick out children’s Spanish books and translate each word to practice your translation skills.</p></article>
+            <article><h2>3.Familiarize yourself with the infinitive form and all of the conjugations.</h2><p>The infinitive form of the verb has AR, ER, or IR ending such as hablar, comer, and vivir. Make sure you know that the infinitive form is to+ verb such as hablar is to + speak. Many people confuse the conjugated forms of the verb. Therefore, make sure you know that hablo, hablas, habla, hablamos, and hablan all refer to the verb hablar which means to speak. However, they do not mean the same thing, each form refers to its own pronoun.  For instance, when you see the word hablan do not say it automatically think that it means to speak, recognize that this verb is conjugated and it refers to THEY speak.</p></article>
+            <article><h2>4. Repetition, repetition, repetitionI can not stress enough repetition can help you learn quickly. </h2><p>Make notes, flashcards, and repeat the new words as much as possible. Another great way of memorizing is writing out the names of objects in Spanish on a sticky note and sticking it to the corresponding object. For instance, you can put a sticky note with the word SILLA on a chair, MESA on a table, and etc. Each time you will look at these objects you will see the Spanish translation along with the correct spelling. </p><img src='${articlepic}' alt='article-pic' /></article>
+            <article><h2>5. Watch Videos.</h2><p>Nowadays, we all go on youtube and watch some sort of a video in varying lengths. Every once in a while, just search for a Spanish movie with Spanish subtitles and also English subtitles. You do not have to watch an entire episode, you can just watch a few minutes every day. When you read the previous sentence, you might think why Spanish subtitles? Well, reading the Spanish subtitles will allow you to get better at spelling, and also sometimes the actors might speak too fast, so if you read the subtitles you might better understand the meaning. Also, the English subtitles will allow you to get the meaning of simple and more complex words. For instance, after you hear the word VAMOS, or ¿Que Paso? multiple times you will quickly learn their meaning since Spanish speaking people use them a lot.</p></article>
+        `
+    }
+];

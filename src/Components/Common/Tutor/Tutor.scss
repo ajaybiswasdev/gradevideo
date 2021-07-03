@@ -1,0 +1,129 @@
+.tutor-component {
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    cursor: pointer;
+    .info-area {
+        display: flex;
+        width: 100%;
+        position: relative;
+        z-index: 1;
+        .tutor-avatar {
+            background-color: white;
+        }
+        .sub-info {
+            width: calc(100% - 30px);
+            height: 240px;
+            object-fit: cover;
+        }
+        .tutor-info {
+            padding: 20px 20px 20px 30px;
+            box-shadow: 0px 9px 45px rgba(0, 0, 0, 0.08);
+            background: white;
+            font-size: 15px;
+            margin-left: auto;
+            margin-top: -60px;
+            min-height: 320px;
+            // height: 110px;
+
+            .name {
+                font-weight: bold;
+                font-size: 20px;
+                margin-bottom: 4px;
+            }
+            .sub-text {
+                color: #7B88A0;
+                line-height: 22px;
+                min-height: 44px;
+                display: flex;
+                align-items: center;
+            }
+            .school {
+                margin: 10px 0 8px;
+                border-top: 1px solid #E7EBEE;
+                border-bottom: 1px solid #E7EBEE;
+                padding: 8px 0 12px;
+                display: flex;
+                align-items: center;
+                img {
+                    width: 20px;
+                    height: 20px;
+                    margin-right: 10px;
+                }
+            }
+            .team-description {
+                display: -webkit-box;
+                -webkit-line-clamp: 9;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+            }
+            .tutor-description {
+                display: -webkit-box;
+                -webkit-line-clamp: 5;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+            }
+        }
+
+        .team-sub-info {
+            width: calc(100% - 30px);
+            object-fit: cover;
+        }
+        .team-tutor-info {
+            padding: 20px 20px 20px 30px;
+            box-shadow: 0px 9px 45px rgba(0, 0, 0, 0.08);
+            background: white;
+            font-size: 15px;
+            margin-left: auto;
+            margin-top: -60px;
+
+            .name {
+                font-weight: bold;
+                font-size: 20px;
+                margin-bottom: 4px;
+            }
+            .sub-text {
+                color: #7B88A0;
+                line-height: 22px;
+                min-height: 44px;
+                display: flex;
+                align-items: center;
+            }
+            .school {
+                margin: 10px 0 8px;
+                border-top: 1px solid #E7EBEE;
+                border-bottom: 1px solid #E7EBEE;
+                padding: 8px 0 12px;
+                display: flex;
+                align-items: center;
+                img {
+                    width: 20px;
+                    height: 20px;
+                    margin-right: 10px;
+                }
+            }
+            .team-description {
+                display: -webkit-box;
+                -webkit-line-clamp: 9;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+            }
+            .tutor-description {
+                display: -webkit-box;
+                -webkit-line-clamp: 5;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+            }
+        }
+    }
+    .custom-dot {
+        right: 17px;
+        left: 17px;
+        top: 20px;
+        bottom: -12px;
+        width: unset;
+        height: unset;
+    }
+}

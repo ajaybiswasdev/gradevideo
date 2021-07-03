@@ -1,0 +1,198 @@
+.ToutorInCity-component {
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px 15px;
+    
+    .main-color {
+        color: #23A4EF;
+    }
+    .ToutorInCity-container {
+        box-shadow: 0px 9px 45px rgba(0, 0, 0, 0.08);
+        border-radius: 10px;
+    
+        .main-row {
+            display: flex;
+
+            .left-area {
+                padding: 0;
+            
+
+                .avatar-area {
+                    img {
+                        position: relative;
+                        z-index: 1;
+                        border-top-left-radius: 10px;
+                        border-bottom-left-radius: 10px;
+                    }
+                }
+            }
+
+            .right-area {
+                
+                .info-area {
+
+                    .sub-info {
+                        border-bottom: 1px solid #E7EBEE;
+                        padding: 10px 0;
+
+                        .name-area {
+                            display: flex;
+                            align-items: center;
+
+                            .name {
+                                font-size: 20px;
+                                font-weight: bold;
+                            }
+
+                            .rating-container {
+                                margin: 0 25px;
+                                height: 38px;
+                            }
+
+                            .review-count {
+                                font-size: 15px;
+                                color: #23A4EF;
+                            }
+                        }
+
+                        .more-info-button {
+                            background-color: #23A4EF;                        
+                            color: #FFF;
+                            cursor: pointer;
+                        }
+
+                        .item-info {
+                            display: flex;
+                            align-items: center;
+                            height: 38px;
+                            padding: 0px;
+
+                            .hour-container {
+                                display: flex;
+                                align-items: center;
+                            }
+                        }
+                    }
+
+                    .profile-details {
+                        padding: 5px 0;
+                    }
+
+                    .first-area {
+                        display: flex;
+                        justify-content: space-between;
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width: 992px) {
+    .ToutorInCity-component {
+        p {
+            font-size: 15px;
+        }
+
+        .ToutorInCity-container {
+
+            .main-row {
+                height: 260px;
+
+                .left-area {
+                    width: 270px;
+
+                    .avatar-area {
+                        img {
+                            width: 260px;
+                            height: 260px;
+                        }
+                    }
+                }
+
+                .right-area {
+                    width: calc(100%-270px);
+
+                    .info-area {
+                        padding: 5px 30px;
+        
+                        .sub-info {
+                            display: flex;
+                            align-items: center;
+                            border-bottom: 1px solid #E7EBEE;
+                            padding: 10px 0;
+
+                            .more-info-button {
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                padding: 5px 15px;
+                                border-radius: 10px;
+                                font-size: 18px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .ToutorInCity-component {
+        p {
+            font-size: 13px;
+        }
+
+        .ToutorInCity-container {
+            padding: 10px;
+            .main-row {
+
+                .left-area {
+                    width: 60px;
+
+                    .avatar-area {
+                        img {
+                            width: 50px;
+                            height: 50px;
+                            border-radius: 10px;
+                        }
+                    }
+                }
+
+                .right-area {
+                    width: calc(100%-60px);
+
+                    .info-area {
+                        padding: 0px 10px;
+        
+                        .sub-info {
+                            border-bottom: 1px solid #E7EBEE;
+                            padding: 10px 0;
+
+                            .more-info-button {
+                                padding: 5px 10px;
+                                border-radius: 5px;
+                                font-size: 13px;
+                            }
+
+                            .item-info {
+                                flex-wrap: wrap;
+                            }
+
+                        }
+
+                        .first-area {
+                            padding-top: 0px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

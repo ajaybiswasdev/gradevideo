@@ -1,0 +1,159 @@
+@import '../../theme.scss';
+
+.review-modal-component {
+    .modal-dialog {
+        width: 100%;
+        margin: 0;
+        height: 100%;
+        max-width: 100%;
+
+        .modal-content {
+            border: none;
+            outline: none;
+            background: none;
+            position: relative;
+            height: 100%;
+
+            .review-content {
+                display: flex;
+                margin: auto;
+                background: white;
+                position: relative;
+                width: 100%;
+                border-radius: 8px;
+                display: flex;
+                .close-btn {
+                    cursor: pointer;
+                    position: absolute;
+                    right: 0;
+                    top: -30px;
+                    fill: white;
+                    .icon-close {
+                        transform: rotate(45deg);
+                    }
+                }
+                .img-area {
+                    position: relative;
+                    .bg {
+                        position: absolute;
+                        left: 0;
+                        right: 0;
+                        top: 0;
+                        bottom: 0;
+                    }
+                }
+                .content-area {
+                    h1 {
+                        font-size: 32px;
+                    }
+                    p {
+                        font-size: 15px;
+                        line-height: 24px;
+                    }
+                    h2 {
+                        font-size: 15px;
+                        margin-bottom: 6px;
+                    }
+                    textarea {
+                        border: 2px solid #E3E8EC;
+                        border-radius: 4px;
+                        color: $primary-text;
+                        font-size: 15px;
+                    }
+                    ::placeholder {
+                        color: $secondary-text;
+                    }
+                    .share-btn {
+                        justify-content: center;
+                        p {
+                            margin-left: 6px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .modal-content {
+        padding: 0 30px;
+    }
+    .review-content {
+        max-width: 700px;
+        .img-area {
+            width: 247px;
+            background: url('../../Assets/Modal/share-modal-web.png') no-repeat;
+            background-size: 100% 100%;
+            background-position: 0 0;
+            border-top-left-radius: 8px;
+            border-bottom-left-radius: 8px;
+            .bg {
+                border-top-left-radius: 8px;
+                border-bottom-left-radius: 8px;
+                background-color: rgba(0, 0, 0, 0.47);
+            }
+        }
+        .content-area {
+            padding: 37px 45px 45px;
+            flex: 1;
+
+            h1 {
+                margin-bottom: 27px;
+            }
+            h2 {
+                margin-top: 34px;
+            }
+            textarea {
+                height: 126px;
+                padding: 8px 13px;
+                margin-bottom: 15px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .modal-content {
+        padding: 0 15px;
+    }
+    .review-content {
+        max-width: 345px;
+        flex-direction: column;
+        .img-area {
+            height: 187px;
+            background: url('../../Assets/Modal/review-modal-mobile.png') no-repeat;
+            background-size: 100% 100%;
+            background-position: 0 0;
+            border-top-right-radius: 8px;
+            border-top-left-radius: 8px;
+            .bg {
+                border-top-right-radius: 8px;
+                border-top-left-radius: 8px;
+                background-color: rgba(0, 0, 0, 0.2);
+            }
+        }
+        .content-area {
+            padding: 19px 30px 30px;
+            h1 {
+                margin-bottom: 20px;
+                text-align: center;
+            }
+            h2 {
+                margin-top: 21px;
+            }
+            textarea {
+                height: 75px;
+                padding: 12px 13px;
+                margin-bottom: 28px;
+            }
+            .star-area {
+                padding-bottom: 30px;
+                p {
+                    color: #7B88A0;
+                    margin-bottom: 8px;
+                }
+            }
+        }
+    }
+}

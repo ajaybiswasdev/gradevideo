@@ -1,0 +1,66 @@
+.tutor-modal-component {
+    .modal-dialog {
+        width: 100%;
+        margin: 0;
+        height: 100%;
+        max-width: 100%;
+
+        .modal-content {
+            border: none;
+            outline: none;
+            background: none;
+            position: relative;
+
+            .tutor-content {
+                position: absolute;
+                display: flex;
+                .close-btn {
+                    cursor: pointer;
+                    position: absolute;
+                    right: 0;
+                    top: -30px;
+                    fill: white;
+                }
+                .photo-area {
+                    .info-area {
+                        display: flex;
+                        width: 100%;
+                        position: relative;
+                        z-index: 1;
+                        .sub-info {
+                            width: calc(100% - 30px);
+                            background: white;
+                        }
+                        .tutor-info {
+                            padding: 20px 20px 20px 30px;
+                            box-shadow: 0px 9px 45px rgba(0, 0, 0, 0.08);
+                            display: flex;
+                            flex-direction: column;
+                            font-size: 15px;
+                            margin-left: auto;
+                            margin-top: -60px;
+                
+                            .name {
+                                font-weight: bold;
+                                font-size: 20px;
+                                margin-bottom: 4px;
+                            }
+                            .sub-text {
+                                color: #7B88A0;
+                                line-height: 22px;
+                            }
+                        }
+                    }
+                    .tutor-photo {
+                        background: white;
+                    }
+                }
+                .content-area {
+                    background: white;
+                    padding: 22px 25px;
+                    overflow-y: scroll;
+                }
+            }
+        }
+    }
+}

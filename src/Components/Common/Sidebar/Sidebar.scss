@@ -1,0 +1,119 @@
+@import '../../../theme.scss';
+
+@keyframes sidebarShow {
+    0% {  transform: translateX(100%); }
+    100% { transform: translateX(0); }
+  }
+  
+@keyframes sidebarHide {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(0); }
+}
+
+.sidebar-component {
+    .sidebar-wrapper {
+        position: fixed;
+        width: 100%;
+        left: 0;
+        top: 0;
+        z-index: 20;
+        background: none;
+        height: 100vh;
+        font-size: 15px;
+        color: $primary-text;
+        display: flex;
+        flex-direction: row-reverse;
+        pointer-events: none;
+        .sidebar-block {
+            flex: 1;
+            height: 100%;
+            display: none;
+            pointer-events: auto;
+        }
+        .sidebar-content {
+            width: 225px;
+            margin-right: -225px;
+            height: 100%;
+            background: white;
+            pointer-events: auto;
+            padding: 0 15px;
+            display: flex;
+            flex-direction: column;
+
+            .logo-area {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                height: 70px;
+
+                img {
+                    height: 31px;
+                }
+    
+                .close-btn {
+                    cursor: pointer;
+                    width: 18px;
+                    height: 18px;
+                    object-fit: fill;
+                }
+            }
+
+            .menu {
+                display: flex;
+                flex-direction: column;
+                margin-top: auto;
+                padding-bottom: 29px;
+
+                .sub-menu {
+                    display: flex;
+                    flex-direction: column;
+                    border-bottom: 0.2px solid $secondary-text;
+                    border-top: 0.2px solid $secondary-text;
+                    padding: 25px 0;
+                    margin-bottom: 30px;
+                }
+    
+                .menu-item {
+                    text-align: right;
+                    margin-bottom: 25px;
+                    color: $secondary-text;
+                    font-size: 20px;
+                    font-weight: 500;
+    
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+    
+                    &:hover {
+                        text-decoration: none;
+                    }
+                }
+
+                .start-btn {
+                    width: 100%;
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+
+    &.active {
+        .sidebar-block {
+            display: block;
+        }
+        .sidebar-content {
+            margin-right: 0;
+            animation: sidebarShow 0.2s ease-out;
+        }
+    }
+    
+    &.inactive {
+        .sidebar-block {
+            display: none;
+        }
+        .sidebar-content {
+            margin-right: -225px;
+            animation: sidebarHide 0.2s ease-out;
+        }
+    }
+}
